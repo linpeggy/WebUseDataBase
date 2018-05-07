@@ -2,6 +2,10 @@
 #define PORT 5735
 SOCKET sServer;
 
+const char szHeadInfo[]="HTTP/1.1 200 OK\nContent-Type:text/html;charset=GBK\nConnection: Close\n\n",
+	szB[]="<html>",szE[]="</html>",szBhead[]="<head>",szEhead[]="</head>",
+	szBtitle[]="<title>",szEtitle[]="</title>",szBbody[]="<body>",szEbody[]="</body>";
+
 unsigned long GetLocalIP()
 {
 	char szHostName[256];
