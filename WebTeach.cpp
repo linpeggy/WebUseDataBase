@@ -1,6 +1,7 @@
 #include "stdafx.h"
 using namespace std;
 void SetupServer(char *IPStr);
+char longstr[]="HTTP/1.1 200 OK\nContent-Type:text/html;charset=GBK\nConnection: Close\n\n<html><head><meta content=\"text/html; charset=GBK\"><title>Test</title></head><body>Hello, World!</body></html>";
 
 void WebTest(char *IP)
 {
